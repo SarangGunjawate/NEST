@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+      <div class="logo">NEST</div>
+      <ul class="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Feedback</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <img src="./img/menubar.png" alt="" class="menu-btn" />
+    </nav>
+    <header style="background-image: url('./img/intro-bg.jpg')">
+      <div class="header-content">
+        <h1>NEST / Interior Design Studio</h1>
+        <div class="line"></div>
+        <h2>Lorem ipsum dolor sit amet consectetur adipiscing.</h2>
+        <a class="btn-container" href="">Learn More</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="story">
+        <h1>Our story</h1>
+        <div class="line2"></div>
+      </div>
+      <div class="img-container">
+        <div class="imgstory">
+          <img src="" alt="" />
+        </div>
+        <div class="description-content">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const menuButton = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+      menuButton.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
